@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hacking on My personal blog</title>
+    <title>Hacking on vmmazz.tech</title>
     <link>/br/tags/hacking/</link>
-    <description>My personal blog (Hacking)</description>
+    <description>vmmazz.tech (Hacking)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>br</language>
     

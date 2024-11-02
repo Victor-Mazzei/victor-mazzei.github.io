@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My personal blog</title>
+    <title>Posts on vmmazz.tech</title>
     <link>/br/posts/</link>
-    <description>My personal blog (Posts)</description>
+    <description>vmmazz.tech (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>br</language>
     
