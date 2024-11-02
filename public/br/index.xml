@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My personal blog</title>
+    <link>/br/</link>
+    <description>My personal blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>br</language>
+    
+      
+        <managingEditor>victor@vmmazz.tech
+          
+            (Victor Mota Mazzei)
+          
+        </managingEditor>
+      
+
+      
+    
+
+    
+    <lastBuildDate>Fri, 01 Nov 2024 23:51:23 -0300</lastBuildDate>
+    
+    <atom:link href="/br/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>/br/about/</link>
+      <pubDate>Fri, 01 Nov 2024 23:51:23 -0300</pubDate>
+      <author>victor@vmmazz.tech (Victor Mota Mazzei)</author>
+      <guid>/br/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Initial Commit</title>
+      <link>/br/posts/initial-commit/</link>
+      <pubDate>Fri, 01 Nov 2024 23:39:25 -0300</pubDate>
+      <author>victor@vmmazz.tech (Victor Mota Mazzei)</author>
+      <guid>/br/posts/initial-commit/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

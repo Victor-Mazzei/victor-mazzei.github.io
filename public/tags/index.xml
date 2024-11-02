@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on My personal blog</title>
+    <link>/tags/</link>
+    <description>My personal blog (Tags)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+      
+        <managingEditor>victor@vmmazz.tech
+          
+            (Victor Mota Mazzei)
+          
+        </managingEditor>
+      
+
+      
+    
+
+    
+    <lastBuildDate>Fri, 01 Nov 2024 23:39:25 -0300</lastBuildDate>
+    
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

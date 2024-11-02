@@ -1,0 +1,15 @@
+{
+  "graph": {
+    "/posts/initial-commit/": {
+      "in": [],
+      "out": []
+    }
+  },
+  "pages": {
+    "/posts/initial-commit/": {
+      "permalink": "/posts/initial-commit/",
+      "section": "posts",
+      "title": "Initial Commit"
+    }
+  }
+}
