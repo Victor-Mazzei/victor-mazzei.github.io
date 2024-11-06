@@ -30,7 +30,18 @@
       <pubDate>Fri, 01 Nov 2024 23:51:23 -0300</pubDate>
       <author>victor@vmmazz.tech (Victor Mota Mazzei)</author>
       <guid>/br/about/</guid>
-      <description></description>
+      <description>&lt;h1 id=&#34;sobre-&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#sobre-&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Sobre :
+&lt;/div&gt;
+&lt;/h1&gt;
+&lt;p&gt;Sou o Victor, muito prazer, sou desenvolvedor, pai e entusiasta nas areas de segurança, redes, devops e afins..
+Nesse blog, vou compartilhar bastante informação sobre os tópicos que mencionei anteriormente, sempre tentando trazer exemplos do dia a dia, de forma bastante simples.&lt;/p&gt;
+&lt;p&gt;Espero que gostem.&lt;/p&gt;
+</description>
     </item>
     
     <item>
