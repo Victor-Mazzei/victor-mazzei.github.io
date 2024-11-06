@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vmmazz.tech</title>
+    <link>/pt-br/</link>
+    <description>vmmazz.tech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    
+      
+        <managingEditor>victor@vmmazz.tech
+          
+            (Victor Mota Mazzei)
+          
+        </managingEditor>
+      
+
+      
+    
+
+    
+    <lastBuildDate>Fri, 01 Nov 2024 23:51:23 -0300</lastBuildDate>
+    
+    <atom:link href="/pt-br/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sobre</title>
+      <link>/pt-br/sobre/</link>
+      <pubDate>Fri, 01 Nov 2024 23:51:23 -0300</pubDate>
+      <author>victor@vmmazz.tech (Victor Mota Mazzei)</author>
+      <guid>/pt-br/sobre/</guid>
+      <description>&lt;p&gt;Sou o Victor, muito prazer, sou desenvolvedor, pai e entusiasta nas areas de segurança, redes, devops e afins..
+Nesse blog, vou compartilhar bastante informação sobre os tópicos que mencionei anteriormente, sempre tentando trazer exemplos do dia a dia, de forma bastante simples.&lt;/p&gt;
+&lt;p&gt;Espero que gostem.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Initial Commit</title>
+      <link>/pt-br/posts/initial-commit/</link>
+      <pubDate>Fri, 01 Nov 2024 23:39:25 -0300</pubDate>
+      <author>victor@vmmazz.tech (Victor Mota Mazzei)</author>
+      <guid>/pt-br/posts/initial-commit/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

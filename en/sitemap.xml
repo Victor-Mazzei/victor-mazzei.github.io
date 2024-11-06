@@ -4,23 +4,13 @@
   <url>
         <loc>https://blog.vmmazz.tech/about/</loc>
         <lastmod>2024-11-01T23:48:24-03:00</lastmod>
-        <xhtml:link
-          rel="alternate"
-          hreflang="br"
-          href="https://blog.vmmazz.tech/br/about/"
-        />
-        <xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="https://blog.vmmazz.tech/about/"
-        />
       </url><url>
         <loc>https://blog.vmmazz.tech/</loc>
         <lastmod>2024-11-01T23:48:24-03:00</lastmod>
         <xhtml:link
           rel="alternate"
-          hreflang="br"
-          href="https://blog.vmmazz.tech/br/"
+          hreflang="pt-br"
+          href="https://blog.vmmazz.tech/pt-br/"
         />
         <xhtml:link
           rel="alternate"
@@ -32,8 +22,8 @@
         <lastmod>2024-11-01T23:39:25-03:00</lastmod>
         <xhtml:link
           rel="alternate"
-          hreflang="br"
-          href="https://blog.vmmazz.tech/br/tags/hacking/"
+          hreflang="pt-br"
+          href="https://blog.vmmazz.tech/pt-br/tags/hacking/"
         />
         <xhtml:link
           rel="alternate"
@@ -45,8 +35,8 @@
         <lastmod>2024-11-01T23:39:25-03:00</lastmod>
         <xhtml:link
           rel="alternate"
-          hreflang="br"
-          href="https://blog.vmmazz.tech/br/tags/homelab/"
+          hreflang="pt-br"
+          href="https://blog.vmmazz.tech/pt-br/tags/homelab/"
         />
         <xhtml:link
           rel="alternate"
@@ -58,8 +48,8 @@
         <lastmod>2024-11-01T23:39:25-03:00</lastmod>
         <xhtml:link
           rel="alternate"
-          hreflang="br"
-          href="https://blog.vmmazz.tech/br/posts/initial-commit/"
+          hreflang="pt-br"
+          href="https://blog.vmmazz.tech/pt-br/posts/initial-commit/"
         />
         <xhtml:link
           rel="alternate"
@@ -71,8 +61,8 @@
         <lastmod>2024-11-01T23:39:25-03:00</lastmod>
         <xhtml:link
           rel="alternate"
-          hreflang="br"
-          href="https://blog.vmmazz.tech/br/tags/networking/"
+          hreflang="pt-br"
+          href="https://blog.vmmazz.tech/pt-br/tags/networking/"
         />
         <xhtml:link
           rel="alternate"
@@ -84,8 +74,8 @@
         <lastmod>2024-11-01T23:39:25-03:00</lastmod>
         <xhtml:link
           rel="alternate"
-          hreflang="br"
-          href="https://blog.vmmazz.tech/br/posts/"
+          hreflang="pt-br"
+          href="https://blog.vmmazz.tech/pt-br/posts/"
         />
         <xhtml:link
           rel="alternate"
@@ -97,8 +87,8 @@
         <lastmod>2024-11-01T23:39:25-03:00</lastmod>
         <xhtml:link
           rel="alternate"
-          hreflang="br"
-          href="https://blog.vmmazz.tech/br/tags/programming/"
+          hreflang="pt-br"
+          href="https://blog.vmmazz.tech/pt-br/tags/programming/"
         />
         <xhtml:link
           rel="alternate"
@@ -110,8 +100,8 @@
         <lastmod>2024-11-01T23:39:25-03:00</lastmod>
         <xhtml:link
           rel="alternate"
-          hreflang="br"
-          href="https://blog.vmmazz.tech/br/tags/"
+          hreflang="pt-br"
+          href="https://blog.vmmazz.tech/pt-br/tags/"
         />
         <xhtml:link
           rel="alternate"
@@ -122,8 +112,8 @@
         <loc>https://blog.vmmazz.tech/authors/</loc>
         <xhtml:link
           rel="alternate"
-          hreflang="br"
-          href="https://blog.vmmazz.tech/br/authors/"
+          hreflang="pt-br"
+          href="https://blog.vmmazz.tech/pt-br/authors/"
         />
         <xhtml:link
           rel="alternate"
@@ -134,8 +124,8 @@
         <loc>https://blog.vmmazz.tech/categories/</loc>
         <xhtml:link
           rel="alternate"
-          hreflang="br"
-          href="https://blog.vmmazz.tech/br/categories/"
+          hreflang="pt-br"
+          href="https://blog.vmmazz.tech/pt-br/categories/"
         />
         <xhtml:link
           rel="alternate"

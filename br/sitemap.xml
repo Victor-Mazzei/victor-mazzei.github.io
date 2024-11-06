@@ -2,145 +2,145 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-        <loc>https://blog.vmmazz.tech/br/about/</loc>
+        <loc>http://localhost:1313/br/about/</loc>
         <lastmod>2024-11-01T23:51:23-03:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="https://blog.vmmazz.tech/about/"
+          href="http://localhost:1313/about/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="br"
-          href="https://blog.vmmazz.tech/br/about/"
+          href="http://localhost:1313/br/about/"
         />
       </url><url>
-        <loc>https://blog.vmmazz.tech/br/</loc>
+        <loc>http://localhost:1313/br/</loc>
         <lastmod>2024-11-01T23:51:23-03:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="https://blog.vmmazz.tech/"
+          href="http://localhost:1313/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="br"
-          href="https://blog.vmmazz.tech/br/"
+          href="http://localhost:1313/br/"
         />
       </url><url>
-        <loc>https://blog.vmmazz.tech/br/tags/hacking/</loc>
+        <loc>http://localhost:1313/br/tags/hacking/</loc>
         <lastmod>2024-11-01T23:39:25-03:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="https://blog.vmmazz.tech/tags/hacking/"
+          href="http://localhost:1313/tags/hacking/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="br"
-          href="https://blog.vmmazz.tech/br/tags/hacking/"
+          href="http://localhost:1313/br/tags/hacking/"
         />
       </url><url>
-        <loc>https://blog.vmmazz.tech/br/tags/homelab/</loc>
+        <loc>http://localhost:1313/br/tags/homelab/</loc>
         <lastmod>2024-11-01T23:39:25-03:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="https://blog.vmmazz.tech/tags/homelab/"
+          href="http://localhost:1313/tags/homelab/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="br"
-          href="https://blog.vmmazz.tech/br/tags/homelab/"
+          href="http://localhost:1313/br/tags/homelab/"
         />
       </url><url>
-        <loc>https://blog.vmmazz.tech/br/posts/initial-commit/</loc>
+        <loc>http://localhost:1313/br/posts/initial-commit/</loc>
         <lastmod>2024-11-01T23:39:25-03:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="https://blog.vmmazz.tech/posts/initial-commit/"
+          href="http://localhost:1313/posts/initial-commit/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="br"
-          href="https://blog.vmmazz.tech/br/posts/initial-commit/"
+          href="http://localhost:1313/br/posts/initial-commit/"
         />
       </url><url>
-        <loc>https://blog.vmmazz.tech/br/tags/networking/</loc>
+        <loc>http://localhost:1313/br/tags/networking/</loc>
         <lastmod>2024-11-01T23:39:25-03:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="https://blog.vmmazz.tech/tags/networking/"
+          href="http://localhost:1313/tags/networking/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="br"
-          href="https://blog.vmmazz.tech/br/tags/networking/"
+          href="http://localhost:1313/br/tags/networking/"
         />
       </url><url>
-        <loc>https://blog.vmmazz.tech/br/posts/</loc>
+        <loc>http://localhost:1313/br/posts/</loc>
         <lastmod>2024-11-01T23:39:25-03:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="https://blog.vmmazz.tech/posts/"
+          href="http://localhost:1313/posts/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="br"
-          href="https://blog.vmmazz.tech/br/posts/"
+          href="http://localhost:1313/br/posts/"
         />
       </url><url>
-        <loc>https://blog.vmmazz.tech/br/tags/programming/</loc>
+        <loc>http://localhost:1313/br/tags/programming/</loc>
         <lastmod>2024-11-01T23:39:25-03:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="https://blog.vmmazz.tech/tags/programming/"
+          href="http://localhost:1313/tags/programming/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="br"
-          href="https://blog.vmmazz.tech/br/tags/programming/"
+          href="http://localhost:1313/br/tags/programming/"
         />
       </url><url>
-        <loc>https://blog.vmmazz.tech/br/tags/</loc>
+        <loc>http://localhost:1313/br/tags/</loc>
         <lastmod>2024-11-01T23:39:25-03:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="https://blog.vmmazz.tech/tags/"
+          href="http://localhost:1313/tags/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="br"
-          href="https://blog.vmmazz.tech/br/tags/"
+          href="http://localhost:1313/br/tags/"
         />
       </url><url>
-        <loc>https://blog.vmmazz.tech/br/authors/</loc>
+        <loc>http://localhost:1313/br/authors/</loc>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="https://blog.vmmazz.tech/authors/"
+          href="http://localhost:1313/authors/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="br"
-          href="https://blog.vmmazz.tech/br/authors/"
+          href="http://localhost:1313/br/authors/"
         />
       </url><url>
-        <loc>https://blog.vmmazz.tech/br/categories/</loc>
+        <loc>http://localhost:1313/br/categories/</loc>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="https://blog.vmmazz.tech/categories/"
+          href="http://localhost:1313/categories/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="br"
-          href="https://blog.vmmazz.tech/br/categories/"
+          href="http://localhost:1313/br/categories/"
         />
       </url>
 </urlset>
