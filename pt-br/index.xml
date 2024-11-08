@@ -42,7 +42,18 @@ Nesse blog, vou compartilhar bastante informação sobre os tópicos que mencion
       <pubDate>Fri, 01 Nov 2024 23:39:25 -0300</pubDate>
       <author>victor@vmmazz.tech (Victor Mota Mazzei)</author>
       <guid>/pt-br/posts/initial-commit/</guid>
-      <description></description>
+      <description>&lt;h1 id=&#34;bem-vindos&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#bem-vindos&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Bem vindos!
+&lt;/div&gt;
+&lt;/h1&gt;
+&lt;p&gt;Neste primeiro post, começa minha história!&lt;br&gt;
+Quero compartilhar bastante coisa sobre alguns tópicos que me fascinam, trazer situações do meu dia a dia como desenvolvedor back-end e explicar conceitos de forma simples, sempre conectando com a rotina de um dev.&lt;/p&gt;
+&lt;p&gt;Cya! 😄&lt;/p&gt;
+</description>
     </item>
     
   </channel>

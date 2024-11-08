@@ -19,7 +19,7 @@
     
 
     
-    <lastBuildDate>Fri, 01 Nov 2024 23:39:25 -0300</lastBuildDate>
+    <lastBuildDate>Wed, 01 Nov 2023 23:39:25 -0300</lastBuildDate>
     
     <atom:link href="/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
     
@@ -27,10 +27,21 @@
     <item>
       <title>Initial Commit</title>
       <link>/posts/initial-commit/</link>
-      <pubDate>Fri, 01 Nov 2024 23:39:25 -0300</pubDate>
+      <pubDate>Wed, 01 Nov 2023 23:39:25 -0300</pubDate>
       <author>victor@vmmazz.tech (Victor Mota Mazzei)</author>
       <guid>/posts/initial-commit/</guid>
-      <description></description>
+      <description>&lt;h1 id=&#34;welcome&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#welcome&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Welcome!
+&lt;/div&gt;
+&lt;/h1&gt;
+&lt;p&gt;In this first post, my story begins!&lt;/p&gt;
+&lt;p&gt;I want to share a lot about the topics that fascinate me, bring in situations from my day-to-day as a back-end developer, and explain concepts in a simple way, always tying them to a dev’s daily life.&lt;/p&gt;
+&lt;p&gt;Cya! 😄&lt;/p&gt;
+</description>
     </item>
     
   </channel>
