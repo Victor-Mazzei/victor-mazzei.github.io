@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
 
   <channel>
-    <title>VMMazz Blog</title>
-    <link>https://blog.vmmazz.com/</link>
-    <description>Recent blog posts on VMMazz Blog</description>
+    <title>Vmmazz&#39;s Blog</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent blog posts on Vmmazz&#39;s Blog</description>
     
     <generator>Hugo (https://gohugo.io)</generator>
     
-    <language>en-us</language>
+    <language>ptbr</language>
     
-    <managingEditor></managingEditor>
+    <managingEditor>contact@vmmazz.com (Victor Mota Mazzei)</managingEditor>
     
-    <webMaster></webMaster>
+    <webMaster>contact@vmmazz.com (Victor Mota Mazzei)</webMaster>
     
     
-    <atom:link href="https://blog.vmmazz.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>

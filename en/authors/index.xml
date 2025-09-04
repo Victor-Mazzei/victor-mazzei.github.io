@@ -8,14 +8,14 @@
     
     <generator>Hugo (https://gohugo.io)</generator>
     
-    <language>ptbr</language>
+    <language>en</language>
     
     <managingEditor>contact@vmmazz.com (Victor Mota Mazzei)</managingEditor>
     
     <webMaster>contact@vmmazz.com (Victor Mota Mazzei)</webMaster>
     
     
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/authors/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
