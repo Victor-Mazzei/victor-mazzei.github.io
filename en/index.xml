@@ -3,7 +3,7 @@
 
   <channel>
     <title>Vmmazz&#39;s Blog</title>
-    <link>http://localhost:1313/</link>
+    <link>https://blog.vmmazz.com/</link>
     <description>Recent blog posts on Vmmazz&#39;s Blog</description>
     
     <generator>Hugo (https://gohugo.io)</generator>
@@ -15,7 +15,7 @@
     <webMaster>contact@vmmazz.com (Victor Mota Mazzei)</webMaster>
     
     
-    <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.vmmazz.com/en/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
