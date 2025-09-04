@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+
   <channel>
     <title>VMMazz Blog</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on VMMazz Blog</description>
-    <generator>Hugo</generator>
+    <link>https://blog.vmmazz.com/</link>
+    <description>Recent blog posts on VMMazz Blog</description>
+    
+    <generator>Hugo (https://gohugo.io)</generator>
+    
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <managingEditor></managingEditor>
+    
+    <webMaster></webMaster>
+    
+    
+    <atom:link href="https://blog.vmmazz.com/index.xml" rel="self" type="application/rss+xml" />
+    
   </channel>
 </rss>
