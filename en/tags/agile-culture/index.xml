@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+
+  <channel>
+    <title>Vmmazz&#39;s Blog</title>
+    <link>https://blog.vmmazz.com/</link>
+    <description>Recent blog posts on Vmmazz&#39;s Blog</description>
+    
+    <generator>Hugo (https://gohugo.io)</generator>
+    
+    <language>en</language>
+    
+    <managingEditor>contact@vmmazz.com (Victor Mota Mazzei)</managingEditor>
+    
+    <webMaster>contact@vmmazz.com (Victor Mota Mazzei)</webMaster>
+    
+    <lastBuildDate>Sun, 08 Feb 2026 00:00:00 +0800</lastBuildDate>
+    
+    <atom:link href="https://blog.vmmazz.com/en/tags/agile-culture/index.xml" rel="self" type="application/rss+xml" />
+    
+
+    <item>
+      <title>What Is Happening to Software Development?</title>
+      <link>https://blog.vmmazz.com/en/posts/what-is-happening-with-software-development/</link>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 +0800</pubDate>
+      
+      <author>contact@vmmazz.com (Victor Mota Mazzei)</author>
+
+      
+      
+      
+      
+
+      <description>
+       # A rant from someone inside the industry This post is a personal reflection on what I have experienced — and continue to experience — throughout my career as a backend developer. I believe these issues go beyond my individual experience and reflect a broader problem within software development as a whole.
+This text represents only my personal opinions.
+# My journey as a backend developer I have worked in marketing agencies, startups, and consulting companies. Over the years, I have experienced different environments, each with its own dynamics and challenges. However, the focus here is development itself.
+
+      </description>
+      <guid isPermaLink="true">https://blog.vmmazz.com/en/posts/what-is-happening-with-software-development/</guid>
+    </item>
+    
+  </channel>
+</rss>

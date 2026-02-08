@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+
+  <channel>
+    <title>Vmmazz&#39;s Blog</title>
+    <link>https://blog.vmmazz.com/</link>
+    <description>Recent blog posts on Vmmazz&#39;s Blog</description>
+    
+    <generator>Hugo (https://gohugo.io)</generator>
+    
+    <language>ptbr</language>
+    
+    <managingEditor>contact@vmmazz.com (Victor Mota Mazzei)</managingEditor>
+    
+    <webMaster>contact@vmmazz.com (Victor Mota Mazzei)</webMaster>
+    
+    <lastBuildDate>Sun, 08 Feb 2026 00:00:00 +0800</lastBuildDate>
+    
+    <atom:link href="https://blog.vmmazz.com/categories/carreira/index.xml" rel="self" type="application/rss+xml" />
+    
+
+    <item>
+      <title>O que está acontecendo com o desenvolvimento de software?</title>
+      <link>https://blog.vmmazz.com/posts/o-que-esta-acontecendo-com-desenvolvimento/</link>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 +0800</pubDate>
+      
+      <author>contact@vmmazz.com (Victor Mota Mazzei)</author>
+
+      
+      
+      
+      
+
+      <description>
+       # Um desabafo de quem vive o desenvolvimento Este post é mais um desabafo sobre o que vivenciei — e ainda vivencio — ao longo da minha carreira como desenvolvedor, especificamente backend. No entanto, acredito que isso seja algo que vem acontecendo com o desenvolvimento de software em geral.
+Vale reforçar que este texto contém apenas minhas opiniões pessoais.
+# Minha trajetória como desenvolvedor backend Já trabalhei em agência de marketing, startups e consultorias. Acredito que tenho experiência suficiente para comentar sobre minha vivência nesses ambientes ao longo dos anos. Cada um possui suas nuances, diferenças e dinâmicas próprias, mas esse não é o foco aqui. O foco é o desenvolvimento.
+
+      </description>
+      <guid isPermaLink="true">https://blog.vmmazz.com/posts/o-que-esta-acontecendo-com-desenvolvimento/</guid>
+    </item>
+    
+  </channel>
+</rss>

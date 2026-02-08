@@ -2,6 +2,95 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+        <loc>https://blog.vmmazz.com/categories/carreira/</loc>
+        <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://blog.vmmazz.com/tags/carreira-em-tecnologia/</loc>
+        <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://blog.vmmazz.com/categories/</loc>
+        <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+        <xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="https://blog.vmmazz.com/en/categories/"
+        />
+        <xhtml:link
+          rel="alternate"
+          hreflang="ptbr"
+          href="https://blog.vmmazz.com/categories/"
+        />
+      </url><url>
+        <loc>https://blog.vmmazz.com/tags/cultura-%C3%A1gil/</loc>
+        <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://blog.vmmazz.com/tags/desenvolvedor-backend/</loc>
+        <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://blog.vmmazz.com/categories/desenvolvimento/</loc>
+        <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://blog.vmmazz.com/tags/desenvolvimento-de-software/</loc>
+        <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://blog.vmmazz.com/tags/intelig%C3%AAncia-artificial/</loc>
+        <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://blog.vmmazz.com/posts/o-que-esta-acontecendo-com-desenvolvimento/</loc>
+        <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+        <xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="https://blog.vmmazz.com/en/posts/what-is-happening-with-software-development/"
+        />
+        <xhtml:link
+          rel="alternate"
+          hreflang="ptbr"
+          href="https://blog.vmmazz.com/posts/o-que-esta-acontecendo-com-desenvolvimento/"
+        />
+      </url><url>
+        <loc>https://blog.vmmazz.com/posts/</loc>
+        <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+        <xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="https://blog.vmmazz.com/en/posts/"
+        />
+        <xhtml:link
+          rel="alternate"
+          hreflang="ptbr"
+          href="https://blog.vmmazz.com/posts/"
+        />
+      </url><url>
+        <loc>https://blog.vmmazz.com/tags/prazos-irreais/</loc>
+        <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+      </url><url>
+        <loc>https://blog.vmmazz.com/tags/</loc>
+        <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+        <xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="https://blog.vmmazz.com/en/tags/"
+        />
+        <xhtml:link
+          rel="alternate"
+          hreflang="ptbr"
+          href="https://blog.vmmazz.com/tags/"
+        />
+      </url><url>
+        <loc>https://blog.vmmazz.com/</loc>
+        <lastmod>2026-02-08T00:00:00+00:00</lastmod>
+        <xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="https://blog.vmmazz.com/en/"
+        />
+        <xhtml:link
+          rel="alternate"
+          hreflang="ptbr"
+          href="https://blog.vmmazz.com/"
+        />
+      </url><url>
         <loc>https://blog.vmmazz.com/about/</loc>
         <lastmod>2025-12-09T00:00:00+00:00</lastmod>
         <xhtml:link
@@ -15,19 +104,6 @@
           href="https://blog.vmmazz.com/about/"
         />
       </url><url>
-        <loc>https://blog.vmmazz.com/</loc>
-        <lastmod>2025-12-09T00:00:00+00:00</lastmod>
-        <xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="https://blog.vmmazz.com/en/"
-        />
-        <xhtml:link
-          rel="alternate"
-          hreflang="ptbr"
-          href="https://blog.vmmazz.com/"
-        />
-      </url><url>
         <loc>https://blog.vmmazz.com/authors/</loc>
         <xhtml:link
           rel="alternate"
@@ -38,30 +114,6 @@
           rel="alternate"
           hreflang="ptbr"
           href="https://blog.vmmazz.com/authors/"
-        />
-      </url><url>
-        <loc>https://blog.vmmazz.com/categories/</loc>
-        <xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="https://blog.vmmazz.com/en/categories/"
-        />
-        <xhtml:link
-          rel="alternate"
-          hreflang="ptbr"
-          href="https://blog.vmmazz.com/categories/"
-        />
-      </url><url>
-        <loc>https://blog.vmmazz.com/tags/</loc>
-        <xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="https://blog.vmmazz.com/en/tags/"
-        />
-        <xhtml:link
-          rel="alternate"
-          hreflang="ptbr"
-          href="https://blog.vmmazz.com/tags/"
         />
       </url>
 </urlset>
