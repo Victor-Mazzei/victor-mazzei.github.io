@@ -2,235 +2,235 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-        <loc>http://localhost:1313/tags/ai-engineering/</loc>
+        <loc>https://blog.vmmazz.com/tags/ai-engineering/</loc>
         <lastmod>2026-08-07T00:00:00+00:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/tags/ai-engineering/"
+          href="https://blog.vmmazz.com/en/tags/ai-engineering/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="pt-br"
-          href="http://localhost:1313/tags/ai-engineering/"
+          href="https://blog.vmmazz.com/tags/ai-engineering/"
         />
       </url><url>
-        <loc>http://localhost:1313/categories/</loc>
+        <loc>https://blog.vmmazz.com/categories/</loc>
         <lastmod>2026-08-07T00:00:00+00:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/categories/"
+          href="https://blog.vmmazz.com/en/categories/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="pt-br"
-          href="http://localhost:1313/categories/"
+          href="https://blog.vmmazz.com/categories/"
         />
       </url><url>
-        <loc>http://localhost:1313/tags/code/</loc>
+        <loc>https://blog.vmmazz.com/tags/code/</loc>
         <lastmod>2026-08-07T00:00:00+00:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/tags/code/"
+          href="https://blog.vmmazz.com/en/tags/code/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="pt-br"
-          href="http://localhost:1313/tags/code/"
+          href="https://blog.vmmazz.com/tags/code/"
         />
       </url><url>
-        <loc>http://localhost:1313/posts/config-llms-acessiveis-brasil/</loc>
+        <loc>https://blog.vmmazz.com/posts/config-llms-acessiveis-brasil/</loc>
         <lastmod>2026-08-07T00:00:00+00:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/posts/budget-llm-setup-brazil/"
+          href="https://blog.vmmazz.com/en/posts/budget-llm-setup-brazil/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="pt-br"
-          href="http://localhost:1313/posts/config-llms-acessiveis-brasil/"
+          href="https://blog.vmmazz.com/posts/config-llms-acessiveis-brasil/"
         />
       </url><url>
-        <loc>http://localhost:1313/categories/harness/</loc>
+        <loc>https://blog.vmmazz.com/categories/harness/</loc>
         <lastmod>2026-08-07T00:00:00+00:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/categories/harness/"
+          href="https://blog.vmmazz.com/en/categories/harness/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="pt-br"
-          href="http://localhost:1313/categories/harness/"
+          href="https://blog.vmmazz.com/categories/harness/"
         />
       </url><url>
-        <loc>http://localhost:1313/tags/harness/</loc>
+        <loc>https://blog.vmmazz.com/tags/harness/</loc>
         <lastmod>2026-08-07T00:00:00+00:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/tags/harness/"
+          href="https://blog.vmmazz.com/en/tags/harness/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="pt-br"
-          href="http://localhost:1313/tags/harness/"
+          href="https://blog.vmmazz.com/tags/harness/"
         />
       </url><url>
-        <loc>http://localhost:1313/categories/homelab/</loc>
+        <loc>https://blog.vmmazz.com/categories/homelab/</loc>
         <lastmod>2026-08-07T00:00:00+00:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/categories/homelab/"
+          href="https://blog.vmmazz.com/en/categories/homelab/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="pt-br"
-          href="http://localhost:1313/categories/homelab/"
+          href="https://blog.vmmazz.com/categories/homelab/"
         />
       </url><url>
-        <loc>http://localhost:1313/tags/homelab/</loc>
+        <loc>https://blog.vmmazz.com/tags/homelab/</loc>
         <lastmod>2026-08-07T00:00:00+00:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/tags/homelab/"
+          href="https://blog.vmmazz.com/en/tags/homelab/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="pt-br"
-          href="http://localhost:1313/tags/homelab/"
+          href="https://blog.vmmazz.com/tags/homelab/"
         />
       </url><url>
-        <loc>http://localhost:1313/categories/llms/</loc>
+        <loc>https://blog.vmmazz.com/categories/llms/</loc>
         <lastmod>2026-08-07T00:00:00+00:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/categories/llms/"
+          href="https://blog.vmmazz.com/en/categories/llms/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="pt-br"
-          href="http://localhost:1313/categories/llms/"
+          href="https://blog.vmmazz.com/categories/llms/"
         />
       </url><url>
-        <loc>http://localhost:1313/tags/llms/</loc>
+        <loc>https://blog.vmmazz.com/tags/llms/</loc>
         <lastmod>2026-08-07T00:00:00+00:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/tags/llms/"
+          href="https://blog.vmmazz.com/en/tags/llms/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="pt-br"
-          href="http://localhost:1313/tags/llms/"
+          href="https://blog.vmmazz.com/tags/llms/"
         />
       </url><url>
-        <loc>http://localhost:1313/posts/</loc>
+        <loc>https://blog.vmmazz.com/posts/</loc>
         <lastmod>2026-08-07T00:00:00+00:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/posts/"
+          href="https://blog.vmmazz.com/en/posts/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="pt-br"
-          href="http://localhost:1313/posts/"
+          href="https://blog.vmmazz.com/posts/"
         />
       </url><url>
-        <loc>http://localhost:1313/tags/</loc>
+        <loc>https://blog.vmmazz.com/tags/</loc>
         <lastmod>2026-08-07T00:00:00+00:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/tags/"
+          href="https://blog.vmmazz.com/en/tags/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="pt-br"
-          href="http://localhost:1313/tags/"
+          href="https://blog.vmmazz.com/tags/"
         />
       </url><url>
-        <loc>http://localhost:1313/</loc>
+        <loc>https://blog.vmmazz.com/</loc>
         <lastmod>2026-08-07T00:00:00+00:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/"
+          href="https://blog.vmmazz.com/en/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="pt-br"
-          href="http://localhost:1313/"
+          href="https://blog.vmmazz.com/"
         />
       </url><url>
-        <loc>http://localhost:1313/categories/carreira/</loc>
+        <loc>https://blog.vmmazz.com/categories/carreira/</loc>
         <lastmod>2026-02-08T00:00:00+00:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/tags/carreira-em-tecnologia/</loc>
+        <loc>https://blog.vmmazz.com/tags/carreira-em-tecnologia/</loc>
         <lastmod>2026-02-08T00:00:00+00:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/tags/cultura-%C3%A1gil/</loc>
+        <loc>https://blog.vmmazz.com/tags/cultura-%C3%A1gil/</loc>
         <lastmod>2026-02-08T00:00:00+00:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/tags/desenvolvedor-backend/</loc>
+        <loc>https://blog.vmmazz.com/tags/desenvolvedor-backend/</loc>
         <lastmod>2026-02-08T00:00:00+00:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/categories/desenvolvimento/</loc>
+        <loc>https://blog.vmmazz.com/categories/desenvolvimento/</loc>
         <lastmod>2026-02-08T00:00:00+00:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/tags/desenvolvimento-de-software/</loc>
+        <loc>https://blog.vmmazz.com/tags/desenvolvimento-de-software/</loc>
         <lastmod>2026-02-08T00:00:00+00:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/tags/intelig%C3%AAncia-artificial/</loc>
+        <loc>https://blog.vmmazz.com/tags/intelig%C3%AAncia-artificial/</loc>
         <lastmod>2026-02-08T00:00:00+00:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/posts/o-que-esta-acontecendo-com-desenvolvimento/</loc>
+        <loc>https://blog.vmmazz.com/posts/o-que-esta-acontecendo-com-desenvolvimento/</loc>
         <lastmod>2026-02-08T00:00:00+00:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/posts/what-is-happening-with-software-development/"
+          href="https://blog.vmmazz.com/en/posts/what-is-happening-with-software-development/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="pt-br"
-          href="http://localhost:1313/posts/o-que-esta-acontecendo-com-desenvolvimento/"
+          href="https://blog.vmmazz.com/posts/o-que-esta-acontecendo-com-desenvolvimento/"
         />
       </url><url>
-        <loc>http://localhost:1313/tags/prazos-irreais/</loc>
+        <loc>https://blog.vmmazz.com/tags/prazos-irreais/</loc>
         <lastmod>2026-02-08T00:00:00+00:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/about/</loc>
+        <loc>https://blog.vmmazz.com/about/</loc>
         <lastmod>2025-12-09T00:00:00+00:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/about/"
+          href="https://blog.vmmazz.com/en/about/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="pt-br"
-          href="http://localhost:1313/about/"
+          href="https://blog.vmmazz.com/about/"
         />
       </url><url>
-        <loc>http://localhost:1313/authors/</loc>
+        <loc>https://blog.vmmazz.com/authors/</loc>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/authors/"
+          href="https://blog.vmmazz.com/en/authors/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="pt-br"
-          href="http://localhost:1313/authors/"
+          href="https://blog.vmmazz.com/authors/"
         />
       </url>
 </urlset>

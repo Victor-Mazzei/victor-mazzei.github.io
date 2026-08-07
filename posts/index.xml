@@ -3,7 +3,7 @@
 
   <channel>
     <title>Vmmazz&#39;s Blog</title>
-    <link>http://localhost:1313/</link>
+    <link>https://blog.vmmazz.com/</link>
     <description>Recent blog posts on Vmmazz&#39;s Blog</description>
     
     <generator>Hugo (https://gohugo.io)</generator>
@@ -16,12 +16,12 @@
     
     <lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0800</lastBuildDate>
     
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.vmmazz.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
 
     <item>
       <title>Como configuro LLMs para serem usadas a um custo acessível (no Brasil)</title>
-      <link>http://localhost:1313/posts/config-llms-acessiveis-brasil/</link>
+      <link>https://blog.vmmazz.com/posts/config-llms-acessiveis-brasil/</link>
       <pubDate>Fri, 07 Aug 2026 00:00:00 +0800</pubDate>
       
       <author>contact@vmmazz.com (Victor Mota Mazzei)</author>
@@ -37,13 +37,13 @@ Antes de começar, algumas informações para contextualizar.
 Atualmente tenho três assinaturas: duas do OpenCode Go e uma do OpenAI Go. No total gasto, em média, cerca de R$ 130 por mês. No Brasil isso ainda é um valor relativamente alto, mas já faz parte do meu orçamento mensal.
 
       </description>
-      <guid isPermaLink="true">http://localhost:1313/posts/config-llms-acessiveis-brasil/</guid>
+      <guid isPermaLink="true">https://blog.vmmazz.com/posts/config-llms-acessiveis-brasil/</guid>
     </item>
     
 
     <item>
       <title>O que está acontecendo com o desenvolvimento de software?</title>
-      <link>http://localhost:1313/posts/o-que-esta-acontecendo-com-desenvolvimento/</link>
+      <link>https://blog.vmmazz.com/posts/o-que-esta-acontecendo-com-desenvolvimento/</link>
       <pubDate>Sun, 08 Feb 2026 00:00:00 +0800</pubDate>
       
       <author>contact@vmmazz.com (Victor Mota Mazzei)</author>
@@ -59,7 +59,7 @@ Vale reforçar que este texto contém apenas minhas opiniões pessoais.
 # Minha trajetória como desenvolvedor backend Já trabalhei em agência de marketing, startups e consultorias. Acredito que tenho experiência suficiente para comentar sobre minha vivência nesses ambientes ao longo dos anos. Cada um possui suas nuances, diferenças e dinâmicas próprias, mas esse não é o foco aqui. O foco é o desenvolvimento.
 
       </description>
-      <guid isPermaLink="true">http://localhost:1313/posts/o-que-esta-acontecendo-com-desenvolvimento/</guid>
+      <guid isPermaLink="true">https://blog.vmmazz.com/posts/o-que-esta-acontecendo-com-desenvolvimento/</guid>
     </item>
     
   </channel>

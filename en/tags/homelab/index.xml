@@ -3,7 +3,7 @@
 
   <channel>
     <title>Vmmazz&#39;s Blog</title>
-    <link>http://localhost:1313/</link>
+    <link>https://blog.vmmazz.com/</link>
     <description>Recent blog posts on Vmmazz&#39;s Blog</description>
     
     <generator>Hugo (https://gohugo.io)</generator>
@@ -16,12 +16,12 @@
     
     <lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0800</lastBuildDate>
     
-    <atom:link href="http://localhost:1313/en/tags/homelab/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.vmmazz.com/en/tags/homelab/index.xml" rel="self" type="application/rss+xml" />
     
 
     <item>
       <title>How I Configure LLMs on a Budget (in Brazil)</title>
-      <link>http://localhost:1313/en/posts/budget-llm-setup-brazil/</link>
+      <link>https://blog.vmmazz.com/en/posts/budget-llm-setup-brazil/</link>
       <pubDate>Fri, 07 Aug 2026 00:00:00 +0800</pubDate>
       
       <author>contact@vmmazz.com (Victor Mota Mazzei)</author>
@@ -37,7 +37,7 @@ Before we get started, here&amp;amp;rsquo;s a bit of context.
 At the moment I have three subscriptions: two OpenCode Go subscriptions and one OpenAI Go subscription. Altogether, I spend around R$130 per month. In Brazil, that&amp;amp;rsquo;s still a fairly significant expense, but it&amp;amp;rsquo;s something I&amp;amp;rsquo;ve already factored into my monthly budget.
 
       </description>
-      <guid isPermaLink="true">http://localhost:1313/en/posts/budget-llm-setup-brazil/</guid>
+      <guid isPermaLink="true">https://blog.vmmazz.com/en/posts/budget-llm-setup-brazil/</guid>
     </item>
     
   </channel>
