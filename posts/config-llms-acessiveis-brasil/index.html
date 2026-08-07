@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="pt-br" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-name" content="Anubis2">
+
+<title>Como configuro LLMs para serem usadas a um custo acessível (no Brasil) - Vmmazz&rsquo;s Blog</title>
+
+<meta name="description" content="O setup que utilizo para trabalhar com LLMs de forma acessível no Brasil para tarefas do dia a dia, programação e praticamente qualquer outra atividade.">
+
+
+    <meta name="keywords" content="llms engineering,harness engineering,homelab,low cost AI,engenharia de LLMs,engenharia de Harness">
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/apple-touch-icon.png">
+
+
+
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.d689b5fbb7d1cd9607897a5a9543707bde0cc128b65af5fbbb005b42ec863068.css" integrity="sha256-1om1&#43;7fRzZYHiXpalUNwe94MwSi2WvX7uwBbQuyGMGg=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.9c1888ebff42c0224ce04dac10cb2c401f1b77f54f78e8d87d73c3bed781c263.css" integrity="sha256-nBiI6/9CwCJM4E2sEMssQB8bd/VPeOjYfXPDvteBwmM=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.acd606c0fce58853afe0248d37bb41acbbcdd8b1aca2412b6c0fa760da0137f3.css" integrity="sha256-rNYGwPzliFOv4CSNN7tBrLvN2LGsokErbA&#43;nYNoBN/M=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.cf0d1965cc2b3588cca3dd8a31068596d83ad4d2febd41cc52a5671c5bbd5a9d.css" integrity="sha256-zw0ZZcwrNYjMo92KMQaFltg61NL&#43;vUHMUqVnHFu9Wp0=">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="/js/script.672e2309c296e07c18bcd08b28d797a56222ff941d65f308fba3158c44885b14.js" type="text/javascript" charset="utf-8" integrity="sha256-Zy4jCcKW4HwYvNCLKNeXpWIi/5QdZfMI&#43;6MVjESIWxQ="></script>
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J6JRFYGM1X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-J6JRFYGM1X');
+</script>
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        <h1 class="site-title noselect">
+    <a href="/">Vmmazz&#39;s Blog</a>
+</h1>
+
+        
+
+
+    
+        <div class="theme-switcher">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+        </div>
+    
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "auto"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('.theme-switcher')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                autoDefinedScheme.addListener(autoChangeScheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        <ul class="social-icons noselect">
+
+
+
+
+
+    
+        <li>
+            <a href="https://github.com/victor-mazzei" title="Github" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://www.linkedin.com/in/victor-mota-mazzei-322259a4/" title="Linkedin" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" /><path d="M8 11l0 5" /><path d="M8 8l0 .01" /><path d="M12 16l0 -5" /><path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="contact@vmmazz.com" title="Email" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="http://localhost:1313/" title="">Home</a>
+        
+        <a class="" href="http://localhost:1313/about/" title="">Sobre</a>
+        
+        <a class="" href="http://localhost:1313/tags/" title="">Tags</a>
+        
+        <a class="" href="http://localhost:1313/posts/" title="">Posts</a>
+        
+    </nav>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h1 class="p-name post-title ">Como configuro LLMs para serem usadas a um custo acessível (no Brasil)</h1>
+                
+    
+    <span>
+        <ul class="post-translations">
+            
+                
+                    <li>
+                        <a href="/en/posts/budget-llm-setup-brazil/">EN</a>
+                    </li>
+                
+            
+                
+                    <li>
+                        PTBR
+                    </li>
+                
+            
+        </ul>
+    </span>
+
+
+            </header>
+            
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2026-08-07">2026-08-07</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/posts/config-llms-acessiveis-brasil/">/posts/config-llms-acessiveis-brasil/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">map[email:contact@vmmazz.com location:Brasil name:Victor Mota Mazzei]</a>
+
+
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    
+                    <li><a href="/categories/homelab">homelab</a></li>
+                
+                    
+                    <li><a href="/categories/llms">llms</a></li>
+                
+                    
+                    <li><a href="/categories/harness">harness</a></li>
+                
+            </ul>
+        
+        
+            <ul class="post-tags">
+                
+                    
+                    <li><a href="/tags/llms">#llms</a></li>
+                
+                    
+                    <li><a href="/tags/ai-engineering">#AI Engineering</a></li>
+                
+                    
+                    <li><a href="/tags/code">#Code</a></li>
+                
+                    
+                    <li><a href="/tags/harness">#harness</a></li>
+                
+                    
+                    <li><a href="/tags/homelab">#homelab</a></li>
+                
+            </ul>
+        
+        
+    </div>
+</div>
+
+        </div>
+        
+
+
+
+
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            <p>A ideia deste post é compartilhar como configurei meu OpenCode para trabalhar da melhor forma possível, obtendo o melhor custo-benefício que encontrei até o momento.</p>
+<p>Antes de começar, algumas informações para contextualizar.</p>
+<p>Atualmente tenho três assinaturas: duas do OpenCode Go e uma do OpenAI Go. No total gasto, em média, cerca de <strong>R$ 130 por mês</strong>. No Brasil isso ainda é um valor relativamente alto, mas já faz parte do meu orçamento mensal.</p>
+<h2 id="por-que-decidi-seguir-esse-caminho" >
+<div>
+    <a href="#por-que-decidi-seguir-esse-caminho">
+        #
+    </a>
+    Por que decidi seguir esse caminho?
+</div>
+</h2>
+<p>Em resumo: por causa dos limites de uso (rate limits).</p>
+<p>Você pode estar se perguntando: &ldquo;Por que não assinar diretamente o Claude Code ou o Codex?&rdquo;</p>
+<p>A resposta é simples: eu não queria ficar preso a um único provedor ou modelo.</p>
+<p>Se amanhã eu quiser utilizar um modelo da Anthropic, por exemplo, basta colocar alguns dólares de crédito no OpenCode e utilizá-lo. Ter essa liberdade de escolher diferentes modelos foi justamente o que me conquistou.</p>
+<p>Essa decisão acabou me levando a testar, na prática, modelos de diversos fornecedores para descobrir quais realmente funcionam melhor para cada tipo de tarefa.</p>
+<p>E posso dizer uma coisa: existem modelos extremamente baratos que entregam resultados excelentes, desde que você saiba direcioná-los corretamente.</p>
+<p>Algo que você precisa mudar na sua mentalidade é a expectativa do famoso <em>one-shot</em>.</p>
+<p>Nós, seres humanos, raramente acertamos alguma coisa perfeitamente na primeira tentativa. Então por que ficamos frustrados quando uma LLM também não acerta?</p>
+<p>Iterar faz parte do processo.</p>
+<h3 id="um-comentário-sobre-privacidade" >
+<div>
+    <a href="#um-coment%c3%a1rio-sobre-privacidade">
+        ##
+    </a>
+    Um comentário sobre privacidade
+</div>
+</h3>
+<p>Sempre aparece alguém levantando a questão da privacidade dos modelos chineses.</p>
+<p>Minha opinião é simples: quando você deixar de usar Facebook, Instagram, X, WhatsApp, Windows, Apple e diversos outros serviços que coletam dados diariamente, talvez esteja pronto para discutir esse assunto de forma consistente.</p>
+<p>Até lá, prefiro não perder muito tempo com esse debate.</p>
+<p>Agora vamos ao que interessa.</p>
+<p>Provavelmente você está se perguntando como organizo essa &ldquo;arquitetura orientada a custo&rdquo; (se é que posso chamar assim hehehe).</p>
+<p>Minha stack atualmente é composta por:</p>
+<ul>
+<li>OpenCode</li>
+<li>Manifest.build (hospedado localmente no meu homelab)</li>
+<li>Agents e Subagents com responsabilidades bem definidas</li>
+</ul>
+<h2 id="opencode" >
+<div>
+    <a href="#opencode">
+        #
+    </a>
+    OpenCode
+</div>
+</h2>
+<p>Não há muito o que dizer.</p>
+<p>Ele é meu <em>daily driver</em>.</p>
+<p>É um projeto open source, bastante maduro e hoje atende praticamente tudo o que preciso.</p>
+<p>Minha única reclamação é que, quando existe uma mensagem na fila (<em>queue</em>), ela não pode ser removida. Isso me incomoda bastante, tem algumas issues sobre isso no repo, mas terei que aguardar a resolução e não chega a atrapalhar meu fluxo de trabalho.</p>
+<p>Também instalei diversas Skills que ajudam bastante no dia a dia, como Superpowers, Ponytail, entre outras.</p>
+<p>Caso ainda não conheça, recomendo dar uma olhada em:</p>
+<p><a href="https://opencode.ai/" target="_blank" rel="noopener noreferrer">https://opencode.ai/</a></p>
+<h2 id="manifest" >
+<div>
+    <a href="#manifest">
+        #
+    </a>
+    Manifest
+</div>
+</h2>
+<p>É aqui que a mágica acontece.</p>
+<p>O Manifest funciona como um proxy na frente das requisições para as LLMs, direcionando cada chamada conforme regras previamente definidas.</p>
+<p>Essa é uma explicação bastante simplificada, já que o objetivo deste post não é explicar o Manifest em detalhes.</p>
+<p>No site <a href="https://manifest.build/" target="_blank" rel="noopener noreferrer">oficial</a> você encontra uma documentação muito mais completa.</p>
+<p>No meu caso, configurei cinco rotas para o OpenCode, cada uma voltada para um caso de uso específico.</p>
+<pre><code>            OpenCode
+                │
+                ▼
+             Manifest
+                │
+  ┌─────────────┼──────────────┐
+  │             │              │
+Default       Code        Orchestrator
+  │             │              │
+  ▼             ▼              ▼
+DeepSeek V4   MiniMax M3    GPT-5.6 Luna
+                │
+                ▼
+             Review
+                │
+                ▼
+             GPT-5.6 Luna
+</code></pre>
+<h3 id="default" >
+<div>
+    <a href="#default">
+        ##
+    </a>
+    Default
+</div>
+</h3>
+<p>Para tarefas do dia a dia:</p>
+<ul>
+<li>pequenas alterações de código</li>
+<li>scripts</li>
+<li>perguntas gerais</li>
+</ul>
+<p><strong>Modelo:</strong> DeepSeek V4 Flash</p>
+<h3 id="code" >
+<div>
+    <a href="#code">
+        ##
+    </a>
+    Code
+</div>
+</h3>
+<p>Subagent especializado em tarefas pesadas de desenvolvimento.</p>
+<p>Sempre que preciso gerar ou modificar uma quantidade significativa de código, utilizo essa rota.</p>
+<p><strong>Modelo:</strong> MiniMax M3</p>
+<h3 id="orchestrator" >
+<div>
+    <a href="#orchestrator">
+        ##
+    </a>
+    Orchestrator
+</div>
+</h3>
+<p>Quando estou trabalhando em algo realmente importante, começo sempre por ele.</p>
+<p>Sua função é planejar todas as etapas e delegar o trabalho para os subagents corretos.</p>
+<p><strong>Modelo:</strong> GPT-5.6 Luna</p>
+<h3 id="review" >
+<div>
+    <a href="#review">
+        ##
+    </a>
+    Review
+</div>
+</h3>
+<p>Responsável por revisar código, documentação e praticamente qualquer outro artefato produzido durante o desenvolvimento.</p>
+<p>Seu foco é encontrar problemas, inconsistências e oportunidades de melhoria.</p>
+<p><strong>Modelo:</strong> GPT-5.6 Luna</p>
+<h3 id="free" >
+<div>
+    <a href="#free">
+        ##
+    </a>
+    Free
+</div>
+</h3>
+<p>Como o próprio nome diz, utiliza modelos gratuitos.</p>
+<p>Quando meus limites acabam (e isso acontece kkkkkk), essa rota entra em ação.</p>
+<p>Também a utilizo quando percebo que determinada tarefa não exige um modelo mais caro.</p>
+<p>Você pode estar pensando:</p>
+<blockquote>
+<p>&ldquo;Por que simplesmente não configurar esses modelos diretamente nos Agents ou no opencode.json?&rdquo;</p>
+</blockquote>
+<p>A resposta é simples.</p>
+<p>O Manifest permite configurar <strong>fallbacks por rota</strong>.</p>
+<p>Posso definir até cinco modelos diferentes para cada rota.</p>
+<p>Se um provider estiver indisponível, sofrer rate limit ou apresentar algum erro, o Manifest troca automaticamente para o próximo modelo.</p>
+<p>Na prática, isso fez uma enorme diferença no meu fluxo de trabalho.</p>
+<p>Não preciso interromper o que estou fazendo para trocar manualmente de modelo.</p>
+<p>E, pelo menos na minha experiência, nunca tive problemas de perda de contexto durante esses fallbacks.</p>
+<p>Acredito que isso também acontece porque meu fluxo de trabalho costuma seguir esta sequência:</p>
+<p>Orchestrator → Code → Review</p>
+<p>Cada etapa valida o trabalho da etapa anterior, tornando o processo bastante confiável.</p>
+<h2 id="agents-e-subagents" >
+<div>
+    <a href="#agents-e-subagents">
+        #
+    </a>
+    Agents e Subagents
+</div>
+</h2>
+<p>Para praticamente cada etapa do desenvolvimento de software, possuo Agents e Subagents especializados.</p>
+<h3 id="o-que-são-agents-e-subagents" >
+<div>
+    <a href="#o-que-s%c3%a3o-agents-e-subagents">
+        ##
+    </a>
+    O que são Agents e Subagents?
+</div>
+</h3>
+<p>Se você está começando agora no mundo das LLMs, provavelmente já ouviu diversas definições complicadas, cheias de termos técnicos.</p>
+<p>Na prática, um Agent nada mais é do que um arquivo Markdown contendo instruções, responsabilidades, regras, permissões e contexto.</p>
+<p>É praticamente uma persona especializada em resolver um determinado tipo de problema.</p>
+<p>Normalmente também são definidas:</p>
+<ul>
+<li>ferramentas que ele pode utilizar;</li>
+<li>permissões;</li>
+<li>restrições;</li>
+<li>estilo de resposta;</li>
+<li>responsabilidades.</li>
+</ul>
+<p>Os Subagents funcionam da mesma forma.</p>
+<p>A principal diferença é que normalmente você não conversa diretamente com eles.</p>
+<p>Quem faz isso é outro Agent, responsável por orquestrar todo o processo.</p>
+<p>Pelos nomes das rotas do Manifest, provavelmente você já consegue imaginar quais Agents e Subagents utilizo no meu dia a dia.</p>
+<p>A ideia deste post nunca foi fazer um tutorial extremamente técnico sobre OpenCode, Manifest ou Agents. O objetivo é mostrar que é possível montar um fluxo de trabalho muito eficiente utilizando diferentes modelos, gastando pouco e sem ficar preso a um único provedor.</p>
+<p>No fim das contas, o famoso <em>jeitinho brasileiro</em>: extrair o máximo possível das ferramentas disponíveis, gastar apenas onde realmente faz sentido e, principalmente, não deixar a conta do cartão explodir no fim do mês.</p>
+
+        </div>
+    </article>
+
+    
+    
+    
+        
+        
+    
+
+    
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+
+        </main>
+        
+            <footer class="common-footer noselect">
+    
+    
+        <ul class="language-select">
+    
+    
+    
+
+    
+        
+            <li>Português (Brasil)</li>
+        
+    
+        
+            <li><a href="/en/posts/budget-llm-setup-brazil/">English</a></li>
+        
+    
+</ul>
+
+    
+
+    <div class="common-footer-bottom">
+        
+
+        <div style="display: flex; align-items: center; gap:8px">
+            
+            ©  Victor Mota Mazzei,  2026
+            
+        </div>
+        <div style="display:flex; align-items: center; gap:4px">
+            
+            
+
+            
+        </div>
+        
+    </div>
+</footer>
+
+        
+    </div>
+</body>
+</html>

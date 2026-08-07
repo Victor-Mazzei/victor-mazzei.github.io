@@ -3,19 +3,19 @@
 
   <channel>
     <title>Vmmazz&#39;s Blog</title>
-    <link>https://blog.vmmazz.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent blog posts on Vmmazz&#39;s Blog</description>
     
     <generator>Hugo (https://gohugo.io)</generator>
     
-    <language>ptbr</language>
+    <language>pt-br</language>
     
     <managingEditor>contact@vmmazz.com (Victor Mota Mazzei)</managingEditor>
     
     <webMaster>contact@vmmazz.com (Victor Mota Mazzei)</webMaster>
     
     
-    <atom:link href="https://blog.vmmazz.com/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>

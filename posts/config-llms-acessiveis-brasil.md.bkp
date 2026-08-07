@@ -1,0 +1,211 @@
+---
+title: "Como configuro LLMs para serem usadas a um custo acessível (no Brasil)"
+description: "O setup que utilizo para trabalhar com LLMs de forma acessível no Brasil para tarefas do dia a dia, programação e praticamente qualquer outra atividade."
+date: 2026-08-07
+draft: true
+slug: "config-llms-acessiveis-brasil"
+tags:
+  - llms
+  - AI Engineering
+  - Code
+  - harness
+  - homelab
+categories:
+  - homelab
+  - llms
+  - harness
+keywords:
+  - llms engineering
+  - harness engineering
+  - homelab
+  - low cost AI
+  - engenharia de LLMs
+  - engenharia de Harness
+---
+
+A ideia deste post é compartilhar como configurei meu OpenCode para trabalhar da melhor forma possível, obtendo o melhor custo-benefício que encontrei até o momento.
+
+Antes de começar, algumas informações para contextualizar.
+
+Atualmente tenho três assinaturas: duas do OpenCode Go e uma do OpenAI Go. No total gasto, em média, cerca de **R$ 130 por mês**. No Brasil isso ainda é um valor relativamente alto, mas já faz parte do meu orçamento mensal.
+
+## Por que decidi seguir esse caminho?
+
+Em resumo: por causa dos limites de uso (rate limits).
+
+Você pode estar se perguntando: "Por que não assinar diretamente o Claude Code ou o Codex?"
+
+A resposta é simples: eu não queria ficar preso a um único provedor ou modelo.
+
+Se amanhã eu quiser utilizar um modelo da Anthropic, por exemplo, basta colocar alguns dólares de crédito no OpenCode e utilizá-lo. Ter essa liberdade de escolher diferentes modelos foi justamente o que me conquistou.
+
+Essa decisão acabou me levando a testar, na prática, modelos de diversos fornecedores para descobrir quais realmente funcionam melhor para cada tipo de tarefa.
+
+E posso dizer uma coisa: existem modelos extremamente baratos que entregam resultados excelentes, desde que você saiba direcioná-los corretamente.
+
+Algo que você precisa mudar na sua mentalidade é a expectativa do famoso *one-shot*.
+
+Nós, seres humanos, raramente acertamos alguma coisa perfeitamente na primeira tentativa. Então por que ficamos frustrados quando uma LLM também não acerta?
+
+Iterar faz parte do processo.
+
+### Um comentário sobre privacidade
+
+Sempre aparece alguém levantando a questão da privacidade dos modelos chineses.
+
+Minha opinião é simples: quando você deixar de usar Facebook, Instagram, X, WhatsApp, Windows, Apple e diversos outros serviços que coletam dados diariamente, talvez esteja pronto para discutir esse assunto de forma consistente.
+
+Até lá, prefiro não perder muito tempo com esse debate.
+
+Agora vamos ao que interessa.
+
+Provavelmente você está se perguntando como organizo essa "arquitetura orientada a custo" (se é que posso chamar assim hehehe).
+
+Minha stack atualmente é composta por:
+
+- OpenCode
+- Manifest.build (hospedado localmente no meu homelab)
+- Agents e Subagents com responsabilidades bem definidas
+
+## OpenCode
+
+Não há muito o que dizer.
+
+Ele é meu *daily driver*.
+
+É um projeto open source, bastante maduro e hoje atende praticamente tudo o que preciso.
+
+Minha única reclamação é que, quando existe uma mensagem na fila (*queue*), ela não pode ser removida. Isso me incomoda bastante, tem algumas issues sobre isso no repo, mas terei que aguardar a resolução e não chega a atrapalhar meu fluxo de trabalho.
+
+Também instalei diversas Skills que ajudam bastante no dia a dia, como Superpowers, Ponytail, entre outras.
+
+Caso ainda não conheça, recomendo dar uma olhada em:
+
+https://opencode.ai/
+
+## Manifest
+
+É aqui que a mágica acontece.
+
+O Manifest funciona como um proxy na frente das requisições para as LLMs, direcionando cada chamada conforme regras previamente definidas.
+
+Essa é uma explicação bastante simplificada, já que o objetivo deste post não é explicar o Manifest em detalhes.
+
+No site [oficial](https://manifest.build/) você encontra uma documentação muito mais completa.
+
+No meu caso, configurei cinco rotas para o OpenCode, cada uma voltada para um caso de uso específico.
+
+                OpenCode
+                    │
+                    ▼
+                 Manifest
+                    │
+      ┌─────────────┼──────────────┐
+      │             │              │
+	Default       Code        Orchestrator
+      │             │              │
+      ▼             ▼              ▼
+	DeepSeek V4   MiniMax M3    GPT-5.6 Luna
+	                │
+                    ▼
+                 Review
+                    │
+                    ▼
+                 GPT-5.6 Luna
+### Default
+
+Para tarefas do dia a dia:
+
+- pequenas alterações de código
+- scripts
+- perguntas gerais
+
+**Modelo:** DeepSeek V4 Flash
+
+### Code
+
+Subagent especializado em tarefas pesadas de desenvolvimento.
+
+Sempre que preciso gerar ou modificar uma quantidade significativa de código, utilizo essa rota.
+
+**Modelo:** MiniMax M3
+
+### Orchestrator
+
+Quando estou trabalhando em algo realmente importante, começo sempre por ele.
+
+Sua função é planejar todas as etapas e delegar o trabalho para os subagents corretos.
+
+**Modelo:** GPT-5.6 Luna
+
+### Review
+
+Responsável por revisar código, documentação e praticamente qualquer outro artefato produzido durante o desenvolvimento.
+
+Seu foco é encontrar problemas, inconsistências e oportunidades de melhoria.
+
+**Modelo:** GPT-5.6 Luna
+
+### Free
+
+Como o próprio nome diz, utiliza modelos gratuitos.
+
+Quando meus limites acabam (e isso acontece kkkkkk), essa rota entra em ação.
+
+Também a utilizo quando percebo que determinada tarefa não exige um modelo mais caro.
+
+Você pode estar pensando:
+
+> "Por que simplesmente não configurar esses modelos diretamente nos Agents ou no opencode.json?"
+
+A resposta é simples.
+
+O Manifest permite configurar **fallbacks por rota**.
+
+Posso definir até cinco modelos diferentes para cada rota.
+
+Se um provider estiver indisponível, sofrer rate limit ou apresentar algum erro, o Manifest troca automaticamente para o próximo modelo.
+
+Na prática, isso fez uma enorme diferença no meu fluxo de trabalho.
+
+Não preciso interromper o que estou fazendo para trocar manualmente de modelo.
+
+E, pelo menos na minha experiência, nunca tive problemas de perda de contexto durante esses fallbacks.
+
+Acredito que isso também acontece porque meu fluxo de trabalho costuma seguir esta sequência:
+
+Orchestrator → Code → Review
+
+Cada etapa valida o trabalho da etapa anterior, tornando o processo bastante confiável.
+
+## Agents e Subagents
+
+Para praticamente cada etapa do desenvolvimento de software, possuo Agents e Subagents especializados.
+
+### O que são Agents e Subagents?
+
+Se você está começando agora no mundo das LLMs, provavelmente já ouviu diversas definições complicadas, cheias de termos técnicos.
+
+Na prática, um Agent nada mais é do que um arquivo Markdown contendo instruções, responsabilidades, regras, permissões e contexto.
+
+É praticamente uma persona especializada em resolver um determinado tipo de problema.
+
+Normalmente também são definidas:
+
+- ferramentas que ele pode utilizar;
+- permissões;
+- restrições;
+- estilo de resposta;
+- responsabilidades.
+
+Os Subagents funcionam da mesma forma.
+
+A principal diferença é que normalmente você não conversa diretamente com eles.
+
+Quem faz isso é outro Agent, responsável por orquestrar todo o processo.
+
+Pelos nomes das rotas do Manifest, provavelmente você já consegue imaginar quais Agents e Subagents utilizo no meu dia a dia.
+
+A ideia deste post nunca foi fazer um tutorial extremamente técnico sobre OpenCode, Manifest ou Agents. O objetivo é mostrar que é possível montar um fluxo de trabalho muito eficiente utilizando diferentes modelos, gastando pouco e sem ficar preso a um único provedor.
+
+No fim das contas, o famoso _jeitinho brasileiro_: extrair o máximo possível das ferramentas disponíveis, gastar apenas onde realmente faz sentido e, principalmente, não deixar a conta do cartão explodir no fim do mês.

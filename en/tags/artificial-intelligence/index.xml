@@ -3,7 +3,7 @@
 
   <channel>
     <title>Vmmazz&#39;s Blog</title>
-    <link>https://blog.vmmazz.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent blog posts on Vmmazz&#39;s Blog</description>
     
     <generator>Hugo (https://gohugo.io)</generator>
@@ -16,12 +16,12 @@
     
     <lastBuildDate>Sun, 08 Feb 2026 00:00:00 +0800</lastBuildDate>
     
-    <atom:link href="https://blog.vmmazz.com/en/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
     
 
     <item>
       <title>What Is Happening to Software Development?</title>
-      <link>https://blog.vmmazz.com/en/posts/what-is-happening-with-software-development/</link>
+      <link>http://localhost:1313/en/posts/what-is-happening-with-software-development/</link>
       <pubDate>Sun, 08 Feb 2026 00:00:00 +0800</pubDate>
       
       <author>contact@vmmazz.com (Victor Mota Mazzei)</author>
@@ -37,7 +37,7 @@ This text represents only my personal opinions.
 # My journey as a backend developer I have worked in marketing agencies, startups, and consulting companies. Over the years, I have experienced different environments, each with its own dynamics and challenges. However, the focus here is development itself.
 
       </description>
-      <guid isPermaLink="true">https://blog.vmmazz.com/en/posts/what-is-happening-with-software-development/</guid>
+      <guid isPermaLink="true">http://localhost:1313/en/posts/what-is-happening-with-software-development/</guid>
     </item>
     
   </channel>

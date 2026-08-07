@@ -1,0 +1,214 @@
+---
+title: "How I Configure LLMs on a Budget (in Brazil)"
+description: "The setup I use to work with LLMs affordably in Brazil for everyday tasks, programming, and just about anything else."
+date: 2026-08-07
+draft: true
+slug: "budget-llm-setup-brazil"
+tags:
+  - llms
+  - AI Engineering
+  - Code
+  - harness
+  - homelab
+categories:
+  - homelab
+  - llms
+  - harness
+keywords:
+  - llm engineering
+  - harness engineering
+  - homelab
+  - low cost AI
+  - LLM engineering
+  - Harness engineering
+---
+
+The goal of this post is to share how I configured my OpenCode setup to get the best cost-to-performance ratio I've found so far.
+
+Before we get started, here's a bit of context.
+
+At the moment I have three subscriptions: two OpenCode Go subscriptions and one OpenAI Go subscription. Altogether, I spend around **R$130 per month**. In Brazil, that's still a fairly significant expense, but it's something I've already factored into my monthly budget.
+
+## Why did I decide to go this route?
+
+In short: rate limits.
+
+You might be wondering, "Why not just subscribe directly to Claude Code or Codex?"
+
+The answer is simple: I didn't want to be locked into a single provider or model.
+
+If tomorrow I decide I want to use an Anthropic model, for example, I can simply add a few dollars of credit to OpenCode and use it. Having the freedom to choose between different models is what really won me over.
+
+That decision also pushed me to test models from different vendors in real-world scenarios to find out which ones actually perform best for each type of task.
+
+And I can confidently say this: there are incredibly inexpensive models that deliver excellent results, as long as you know how to guide them properly.
+
+One thing you need to change is your expectation of the famous *one-shot*.
+
+We, as humans, rarely get something perfectly right on the first attempt. So why do we get frustrated when an LLM doesn't either?
+
+Iteration is simply part of the process.
+
+### A quick note on privacy
+
+Someone always brings up privacy concerns regarding Chinese models.
+
+My opinion is pretty straightforward: once you've stopped using Facebook, Instagram, X, WhatsApp, Windows, Apple, and countless other services that collect your data every single day, then maybe you're ready to have a meaningful discussion about the topic.
+
+Until then, I'd rather not spend too much time debating it.
+
+Now, let's get to what really matters.
+
+You're probably wondering how I organize this "cost-oriented architecture" (if I can even call it that 😄).
+
+My current stack consists of:
+
+- OpenCode
+- Manifest.build (self-hosted in my homelab)
+- Agents and Subagents with clearly defined responsibilities
+
+## OpenCode
+
+There's not much to say here.
+
+It's my *daily driver*.
+
+It's an open-source project, quite mature, and today it covers pretty much everything I need.
+
+My only complaint is that once a message enters the queue, it can't be removed. That annoys me quite a bit. There are already a few issues open in the repository about it, so I'll just have to wait for a fix. Fortunately, it doesn't really get in the way of my workflow.
+
+I've also installed several Skills that help a lot in my day-to-day work, such as Superpowers, Ponytail, and others.
+
+If you haven't heard of it yet, I highly recommend checking it out:
+
+https://opencode.ai/
+
+## Manifest
+
+This is where the magic happens.
+
+Manifest acts as a proxy in front of LLM requests, routing each request according to predefined rules.
+
+That's a very simplified explanation since the goal of this post isn't to explain Manifest itself in detail.
+
+You'll find much more complete documentation on the [official website](https://manifest.build/).
+
+In my case, I've configured five different routes for OpenCode, each one targeting a specific use case.
+
+```text
+                OpenCode
+                    │
+                    ▼
+                 Manifest
+                    │
+      ┌─────────────┼──────────────┐
+      │             │              │
+   Default       Code        Orchestrator
+      │             │              │
+      ▼             ▼              ▼
+ DeepSeek V4   MiniMax M3    GPT-5.6 Luna
+                    │
+                    ▼
+                 Review
+                    │
+                    ▼
+                 GPT-5.6 Luna
+```
+
+### Default
+
+For everyday tasks:
+
+- small code changes
+- scripts
+- general questions
+
+**Model:** DeepSeek V4 Flash
+
+### Code
+
+A subagent specialized in heavy development tasks.
+
+Whenever I need to generate or modify a significant amount of code, this is the route I use.
+
+**Model:** MiniMax M3
+
+### Orchestrator
+
+Whenever I'm working on something truly important, this is always where I start.
+
+Its job is to plan every step and delegate work to the appropriate subagents.
+
+**Model:** GPT-5.6 Luna
+
+### Review
+
+Responsible for reviewing code, documentation, and pretty much any artifact produced during development.
+
+Its goal is to find issues, inconsistencies, and opportunities for improvement.
+
+**Model:** GPT-5.6 Luna
+
+### Free
+
+As the name suggests, this route uses free models.
+
+Whenever my quotas run out (and yes, that definitely happens 😂), this route takes over.
+
+I also use it whenever I know a task doesn't justify spending credits on a more capable model.
+
+You might be thinking:
+
+> "Why not just configure those models directly in your Agents or in opencode.json?"
+
+The answer is simple.
+
+Manifest supports **route-based fallbacks**.
+
+I can define up to five different models for each route.
+
+If a provider is unavailable, hits a rate limit, or returns an error, Manifest automatically switches to the next configured model.
+
+In practice, this has made a huge difference in my workflow.
+
+I don't have to stop what I'm doing just to manually switch models.
+
+And, at least in my experience, I've never run into context loss during these fallbacks.
+
+I also believe this works well because my workflow usually follows this sequence:
+
+Orchestrator → Code → Review
+
+Each stage validates the work from the previous one, making the overall process extremely reliable.
+
+## Agents and Subagents
+
+For nearly every stage of the software development lifecycle, I have dedicated Agents and Subagents.
+
+### What are Agents and Subagents?
+
+If you're new to the world of LLMs, you've probably come across all sorts of complicated definitions full of technical jargon.
+
+In practice, an Agent is nothing more than a Markdown file containing instructions, responsibilities, rules, permissions, and context.
+
+It's essentially a specialized persona designed to solve a particular type of problem.
+
+Typically, an Agent also defines:
+
+- the tools it can use;
+- permissions;
+- restrictions;
+- response style;
+- responsibilities.
+
+Subagents work exactly the same way.
+
+The main difference is that you don't usually interact with them directly.
+
+Instead, another Agent invokes them as needed, orchestrating the entire process.
+
+Based on the names of my Manifest routes, you can probably already guess what kinds of Agents and Subagents I use in my daily workflow.
+
+The goal of this post was never to be an in-depth technical tutorial about OpenCode, Manifest, or Agents. Instead, I wanted to show that it's entirely possible to build a highly effective workflow using different models, spending very little money, and without locking yourself into a single provider.
+
+At the end of the day, it's all about applying a bit of the famous Brazilian *jeitinho*: getting the most out of the tools available, spending money only where it truly matters, and, most importantly, keeping your credit card bill from getting out of hand at the end of the month.

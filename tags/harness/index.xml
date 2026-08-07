@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+
+  <channel>
+    <title>Vmmazz&#39;s Blog</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent blog posts on Vmmazz&#39;s Blog</description>
+    
+    <generator>Hugo (https://gohugo.io)</generator>
+    
+    <language>pt-br</language>
+    
+    <managingEditor>contact@vmmazz.com (Victor Mota Mazzei)</managingEditor>
+    
+    <webMaster>contact@vmmazz.com (Victor Mota Mazzei)</webMaster>
+    
+    <lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0800</lastBuildDate>
+    
+    <atom:link href="http://localhost:1313/tags/harness/index.xml" rel="self" type="application/rss+xml" />
+    
+
+    <item>
+      <title>Como configuro LLMs para serem usadas a um custo acessível (no Brasil)</title>
+      <link>http://localhost:1313/posts/config-llms-acessiveis-brasil/</link>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0800</pubDate>
+      
+      <author>contact@vmmazz.com (Victor Mota Mazzei)</author>
+
+      
+      
+      
+      
+
+      <description>
+      A ideia deste post é compartilhar como configurei meu OpenCode para trabalhar da melhor forma possível, obtendo o melhor custo-benefício que encontrei até o momento.
+Antes de começar, algumas informações para contextualizar.
+Atualmente tenho três assinaturas: duas do OpenCode Go e uma do OpenAI Go. No total gasto, em média, cerca de R$ 130 por mês. No Brasil isso ainda é um valor relativamente alto, mas já faz parte do meu orçamento mensal.
+
+      </description>
+      <guid isPermaLink="true">http://localhost:1313/posts/config-llms-acessiveis-brasil/</guid>
+    </item>
+    
+  </channel>
+</rss>
